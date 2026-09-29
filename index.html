@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Project Super Legacy">
+<meta name="screen-orientation" content="landscape">
+		<title>Project Super Legacy</title>
+		<style>
+html, body, #canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	color: white;
+	background-color: black;
+	overflow: hidden;
+	touch-action: none;
+}
+
+#canvas {
+	display: block;
+}
+
+#canvas:focus {
+	outline: none;
+}
+
+#status, #status-splash, #status-progress {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#status, #status-splash {
+	top: 0;
+	bottom: 0;
+}
+
+#status {
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+#status-splash {
+	max-height: 100%;
+	max-width: 100%;
+	margin: auto;
+}
+
+#status-splash.show-image--false {
+	display: none;
+}
+
+#status-splash.fullsize--true {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+#status-splash.use-filter--false {
+	image-rendering: pixelated;
+}
+
+#status-progress, #status-notice {
+	display: none;
+}
+
+#status-progress {
+	bottom: 10%;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#status-notice {
+	background-color: #5b3943;
+	border-radius: 0.5rem;
+	border: 1px solid #9b3943;
+	color: #e0e0e0;
+	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
+	line-height: 1.3;
+	margin: 0 2rem;
+	overflow: hidden;
+	padding: 1rem;
+	text-align: center;
+	z-index: 1;
+}
+		
+/* PSL_MOBILE_LAYOUT */
+:root { --app-w: 100vw; --app-h: 100dvh; }
+html, body {
+  margin:0; padding:0; width:100%; height:100%;
+  position:fixed; inset:0; overflow:hidden !important;
+  overscroll-behavior:none; touch-action:none; background:#000;
+}
+
+
+/* PSL_CANVAS_FIT */
+#canvas, #status {
+  position:fixed !important; left:0 !important; top:0 !important;
+  width:var(--app-w) !important; height:var(--app-h) !important;
+  max-width:none !important; max-height:none !important;
+}
+#rotate-gate {
+  display:none; position:fixed; inset:0; z-index:99999;
+  background:#05070b; color:#fff; align-items:center; justify-content:center;
+  text-align:center; font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+}
+#rotate-gate .box { padding:28px; font-size:22px; font-weight:700; }
+#rotate-gate small { display:block; margin-top:10px; font-size:15px; font-weight:500; opacity:.75; }
+@media (orientation: portrait) {
+  #rotate-gate { display:flex; }
+  #canvas, #status { visibility:hidden !important; }
+}
+@media (orientation: landscape) {
+  #rotate-gate { display:none !important; }
+  #canvas, #status { visibility:visible; }
+}
+
+</style>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
+<link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
+<link rel="manifest" href="index.manifest.json">
+
+	<meta name="description" content="Unofficial, non-commercial fan-made Project Super Legacy prototype for educational playtesting. Not associated with or endorsed by Toei, Shueisha, Bandai Namco, or Dragon Ball rights holders.">
+</head>
+	<body>
+<div id="rotate-gate"><div class="box">TURN PHONE SIDEWAYS<small>Project Super Legacy is landscape-only on mobile.</small></div></div>
+		<canvas id="canvas">
+			Your browser does not support the canvas tag.
+		</canvas>
+
+		<noscript>
+			Your browser does not support JavaScript.
+		</noscript>
+
+		<div id="status">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
+			<progress id="status-progress"></progress>
+			<div id="status-notice"></div>
+		</div>
+
+		<script src="index.js"></script>
+		<script>
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":33799988,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":""};
+const GODOT_THREADS_ENABLED = false;
+const engine = new Engine(GODOT_CONFIG);
+
+(function () {
+	const statusOverlay = document.getElementById('status');
+	const statusProgress = document.getElementById('status-progress');
+	const statusNotice = document.getElementById('status-notice');
+
+	let initializing = true;
+	let statusMode = '';
+
+	function setStatusMode(mode) {
+		if (statusMode === mode || !initializing) {
+			return;
+		}
+		if (mode === 'hidden') {
+			statusOverlay.remove();
+			initializing = false;
+			return;
+		}
+		statusOverlay.style.visibility = 'visible';
+		statusProgress.style.display = mode === 'progress' ? 'block' : 'none';
+		statusNotice.style.display = mode === 'notice' ? 'block' : 'none';
+		statusMode = mode;
+	}
+
+	function setStatusNotice(text) {
+		while (statusNotice.lastChild) {
+			statusNotice.removeChild(statusNotice.lastChild);
+		}
+		const lines = text.split('\n');
+		lines.forEach((line) => {
+			statusNotice.appendChild(document.createTextNode(line));
+			statusNotice.appendChild(document.createElement('br'));
+		});
+	}
+
+	function displayFailureNotice(err) {
+		console.error(err);
+		if (err instanceof Error) {
+			setStatusNotice(err.message);
+		} else if (typeof err === 'string') {
+			setStatusNotice(err);
+		} else {
+			setStatusNotice('An unknown error occurred.');
+		}
+		setStatusMode('notice');
+		initializing = false;
+	}
+
+	const missing = Engine.getMissingFeatures({
+		threads: GODOT_THREADS_ENABLED,
+	});
+
+	if (missing.length !== 0) {
+		if (GODOT_CONFIG['serviceWorker'] && GODOT_CONFIG['ensureCrossOriginIsolationHeaders'] && 'serviceWorker' in navigator) {
+			let serviceWorkerRegistrationPromise;
+			try {
+				serviceWorkerRegistrationPromise = navigator.serviceWorker.getRegistration();
+			} catch (err) {
+				serviceWorkerRegistrationPromise = Promise.reject(new Error('Service worker registration failed.'));
+			}
+			// There's a chance that installing the service worker would fix the issue
+			Promise.race([
+				serviceWorkerRegistrationPromise.then((registration) => {
+					if (registration != null) {
+						return Promise.reject(new Error('Service worker already exists.'));
+					}
+					return registration;
+				}).then(() => engine.installServiceWorker()),
+				// For some reason, `getRegistration()` can stall
+				new Promise((resolve) => {
+					setTimeout(() => resolve(), 2000);
+				}),
+			]).then(() => {
+				// Reload if there was no error.
+				window.location.reload();
+			}).catch((err) => {
+				console.error('Error while registering service worker:', err);
+			});
+		} else {
+			// Display the message as usual
+			const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+			displayFailureNotice(missingMsg + missing.join('\n'));
+		}
+	} else {
+		setStatusMode('progress');
+		engine.startGame({
+			'onProgress': function (current, total) {
+				if (current > 0 && total > 0) {
+					statusProgress.value = current;
+					statusProgress.max = total;
+				} else {
+					statusProgress.removeAttribute('value');
+					statusProgress.removeAttribute('max');
+				}
+			},
+		}).then(() => {
+			setStatusMode('hidden');
+		}, displayFailureNotice);
+	}
+}());
+		</script>
+	
+<script id="PSL_MOBILE_RUNTIME">
+(function(){
+  /* Stable PWA owns its own network-first service worker. */
+  const root=document.documentElement;
+  function fit(){
+    const vv=window.visualViewport;
+    const w=Math.round(vv ? vv.width : window.innerWidth);
+    const h=Math.round(vv ? vv.height : window.innerHeight);
+    root.style.setProperty('--app-w', w+'px');
+    root.style.setProperty('--app-h', h+'px');
+    document.body.style.width=w+'px';
+    document.body.style.height=h+'px';
+    window.scrollTo(0,0);
+  }
+  async function immersive(){
+    try { if(!document.fullscreenElement && document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen(); } catch(e) {}
+    try { if(screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch(e) {}
+    fit();
+  }
+  window.addEventListener('resize', fit, {passive:true});
+  window.addEventListener('orientationchange', ()=>setTimeout(fit,120), {passive:true});
+  if(window.visualViewport){
+    visualViewport.addEventListener('resize', fit, {passive:true});
+    visualViewport.addEventListener('scroll', fit, {passive:true});
+  }
+  document.addEventListener('pointerdown', immersive, {once:true, passive:true});
+  fit(); setTimeout(fit,100); setTimeout(fit,600);
+})();
+</script>
+
+
+<script id="PSL_STABLE_PWA_UPDATE_MANAGER">
+(function(){
+ "use strict";
+ const CURRENT_BUILD="e2e73aee7c842a08";
+ let updateVisible=false;
+ function notify(next){
+  if(updateVisible)return;
+  updateVisible=true;
+  const bar=document.createElement("div");
+  bar.id="psl-update-available";
+  bar.style.cssText="position:fixed;left:50%;bottom:12px;transform:translateX(-50%);background:#112c40;color:#fff;padding:12px 15px;border:2px solid #ffcb67;border-radius:9px;z-index:100000;font:600 15px system-ui;display:flex;gap:12px;align-items:center;max-width:94vw;box-shadow:0 6px 22px #0008";
+  const label=document.createElement("span");label.textContent="A new Super Legacy build is ready.";
+  const go=document.createElement("button");go.textContent="SAVE, THEN UPDATE";go.style.cssText="background:#f4be50;color:#142336;border:0;border-radius:5px;padding:9px;font-weight:700";
+  go.onclick=async()=>{if("serviceWorker" in navigator){const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();}location.reload();};
+  bar.append(label,go);document.body.appendChild(bar);
+ }
+ async function checkVersion(){
+  if(document.visibilityState==="hidden")return;
+  try{
+   const response=await fetch("./version.json?check="+Date.now(),{cache:"no-store"});
+   if(!response.ok)return;
+   const latest=await response.json();
+   if(latest.build_id && latest.build_id!==CURRENT_BUILD)notify(latest.build_id);
+  }catch(e){/* network unavailable; continue playing last installed build */ }
+ }
+ if("serviceWorker" in navigator && location.protocol==="https:"){
+  navigator.serviceWorker.register("./psl-update-sw.js",{updateViaCache:"none"}).then(reg=>reg.update()).catch(()=>{});
+ }
+ window.addEventListener("focus",checkVersion);
+ document.addEventListener("visibilitychange",checkVersion);
+ window.addEventListener("pageshow",checkVersion);
+ setInterval(checkVersion,60000);
+ checkVersion();
+})();
+</script>
+
+</body>
+</html>
+
