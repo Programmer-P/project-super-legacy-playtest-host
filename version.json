@@ -1,14 +1,14 @@
 {
-  "release": "BEERUS_WORLD_4_LOCATION_V1",
-  "build_id": "e2e73aee7c842a08",
-  "pck_sha256": "e2e73aee7c842a0823ed118c98d6fa0d015f71d91e29642b8e50753203299db5",
+  "release": "WORLD_REGISTRY_GEOGRAPHY_V2",
+  "build_id": "c939184f8018fc6e",
+  "pck_sha256": "c939184f8018fc6eef94186581b1563e7a77ff965dacf41b954c6cba410dd232",
   "save_schema": 1,
-  "updated_utc": "2026-09-29T19:30:30.729917+00:00",
+  "updated_utc": "2026-09-30T04:12:06.330868+00:00",
   "notes": [
     "4 actual geographic landing points",
     "West City and Princess Bulma original walkable area prototypes",
-    "Source-preserved Namek tank menu and consolidated WIP dropdown",
+    "Original ten-frame title: full bleed and top aligned",
     "Touch joystick, selected-map markers and save-backup control",
-    "Installable PWA update layer prepared; permanent site not yet configured"
+    "Same permanent Pages origin; no legacy save deletion"
   ]
 }
