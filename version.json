@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_KORIN_LOOKOUT_CLOSE_CAMERA_V1",
-  "build_id": "d71adcc7a46c111c",
-  "pck_sha256": "d71adcc7a46c111cad678dfc74bf8dee310eb481210abbccd153fc942664aaa6",
+  "release": "WORLD_HERCULE_CITY_ORANGE_STAR_V1",
+  "build_id": "f142eb7f4fa72eff",
+  "pck_sha256": "f142eb7f4fa72eff6f36c332df2285f1480c9dc6a2eae83da13bbc9adb6790ff",
   "save_schema": 1,
-  "updated_utc": "2026-09-30T18:04:13.664841+00:00",
+  "updated_utc": "2026-09-30T18:39:03.852345+00:00",
   "notes": [
-    "7 physical Earth landings plus King Kai; closer World Flight camera",
-    "Korin Sanctuary, summit, Lookout and chamber foyer PLAYABLE_WIP",
+    "8 physical Earth landings plus King Kai; closer World Flight camera",
+    "Korin/Lookout preserved; Hercule/Satan City and Orange Star High School added as PLAYABLE_WIP",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch geography selection, planet travel to King Kai, joystick, save-backup control",
+    "Touch geography selection, 8-row mobile location menu, King Kai planet travel, joystick and save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
