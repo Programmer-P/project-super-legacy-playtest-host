@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_HERCULE_CITY_ORANGE_STAR_V1",
-  "build_id": "f142eb7f4fa72eff",
-  "pck_sha256": "f142eb7f4fa72eff6f36c332df2285f1480c9dc6a2eae83da13bbc9adb6790ff",
+  "release": "WORLD_PAPAYA_TOURNAMENT_V1",
+  "build_id": "9714be05d3dc9926",
+  "pck_sha256": "9714be05d3dc9926daba294351023ac28df2d74e7002d3e1b9dbf1eab46cb0aa",
   "save_schema": 1,
-  "updated_utc": "2026-09-30T18:39:03.852345+00:00",
+  "updated_utc": "2026-09-30T20:40:23.493008+00:00",
   "notes": [
-    "8 physical Earth landings plus King Kai; closer World Flight camera",
-    "Korin/Lookout preserved; Hercule/Satan City and Orange Star High School added as PLAYABLE_WIP",
+    "9 physical Earth landings plus King Kai; Papaya Island added",
+    "Korin/Lookout and Hercule/Orange Star preserved; Papaya Island and World Martial Arts Tournament added as PLAYABLE_WIP",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch geography selection, 8-row mobile location menu, King Kai planet travel, joystick and save-backup control",
+    "Touch geography selection, 9-row mobile location menu, Papaya-to-tournament physical route, King Kai travel, joystick and save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
