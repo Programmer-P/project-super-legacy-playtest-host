@@ -1,12 +1,12 @@
 {
-  "release": "WORLD_EXPANSION_RESORT_KINGKAI_V3",
-  "build_id": "b4f743a100fc4ebe",
-  "pck_sha256": "b4f743a100fc4ebee4ed7e921048d83a6865be1b954d95c57dc69c8c4dee1fd7",
+  "release": "WORLD_KORIN_LOOKOUT_CLOSE_CAMERA_V1",
+  "build_id": "d71adcc7a46c111c",
+  "pck_sha256": "d71adcc7a46c111cad678dfc74bf8dee310eb481210abbccd153fc942664aaa6",
   "save_schema": 1,
-  "updated_utc": "2026-09-30T04:44:54.481192+00:00",
+  "updated_utc": "2026-09-30T18:04:13.664841+00:00",
   "notes": [
-    "5 physical Earth landing points plus playable King Kai world",
-    "West City and cruise collision/interior upgrade plus Vegeta resort WIP",
+    "7 physical Earth landings plus King Kai; closer World Flight camera",
+    "Korin Sanctuary, summit, Lookout and chamber foyer PLAYABLE_WIP",
     "Original ten-frame title: full bleed and top aligned",
     "Touch geography selection, planet travel to King Kai, joystick, save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
