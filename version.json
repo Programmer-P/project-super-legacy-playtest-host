@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_REGISTRY_GEOGRAPHY_V2",
-  "build_id": "c939184f8018fc6e",
-  "pck_sha256": "c939184f8018fc6eef94186581b1563e7a77ff965dacf41b954c6cba410dd232",
+  "release": "WORLD_EXPANSION_RESORT_KINGKAI_V3",
+  "build_id": "b4f743a100fc4ebe",
+  "pck_sha256": "b4f743a100fc4ebee4ed7e921048d83a6865be1b954d95c57dc69c8c4dee1fd7",
   "save_schema": 1,
-  "updated_utc": "2026-09-30T04:12:06.330868+00:00",
+  "updated_utc": "2026-09-30T04:44:54.481192+00:00",
   "notes": [
-    "4 actual geographic landing points",
-    "West City and Princess Bulma original walkable area prototypes",
+    "5 physical Earth landing points plus playable King Kai world",
+    "West City and cruise collision/interior upgrade plus Vegeta resort WIP",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch joystick, selected-map markers and save-backup control",
+    "Touch geography selection, planet travel to King Kai, joystick, save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
