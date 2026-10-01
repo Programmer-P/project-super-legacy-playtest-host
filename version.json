@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_VAMPA_STORY_LOCKED_V1",
-  "build_id": "d52f126f2c5bfc03",
-  "pck_sha256": "d52f126f2c5bfc03a3935d932eac6e621daf989470e6b150d2af7816be44568b",
+  "release": "WORLD_THIEVES_DEN_V1",
+  "build_id": "1db12fee41a7e77d",
+  "pck_sha256": "1db12fee41a7e77d8c1b2cf61eb3ea7c28c263a4f46fa9a9cf158d21ca53402b",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T06:10:02.196678+00:00",
+  "updated_utc": "2026-10-01T06:29:22.069050+00:00",
   "notes": [
-    "9 physical Earth landings plus King Kai and Beerus; Planet Vampa WIP included but story locked",
-    "Papaya/Tournament, Korin/Lookout, Hercule/Orange Star and Beerus preserved; Vampa built as PLAYABLE_WIP data but normal travel remains story locked",
+    "10 physical Earth landings plus King Kai and Beerus; Thieves Den added",
+    "Vampa remains built/story-locked; Thieves Den added as a playable Earth WIP with later Buu-era events gated",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch geography selection, 9-row mobile location menu, King Kai and Beerus realm travel, Vampa built-but-locked, joystick and save-backup control",
+    "Touch geography selection, 10-row mobile location menu, Thieves Den physical landing, Vampa built-but-locked, realm travel, joystick and save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
