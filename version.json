@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_BEERUS_PLANET_V1",
-  "build_id": "36001fe8a3ba3d99",
-  "pck_sha256": "36001fe8a3ba3d99011f1492b3706217369189a74af733484988eddb987a4a3f",
+  "release": "WORLD_VAMPA_STORY_LOCKED_V1",
+  "build_id": "d52f126f2c5bfc03",
+  "pck_sha256": "d52f126f2c5bfc03a3935d932eac6e621daf989470e6b150d2af7816be44568b",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T01:57:37.789083+00:00",
+  "updated_utc": "2026-10-01T06:10:02.196678+00:00",
   "notes": [
-    "9 physical Earth landings plus King Kai and Beerus; Beerus realm added",
-    "Papaya/Tournament, Korin/Lookout and Hercule/Orange Star preserved; Beerus Planet added as PLAYABLE_WIP",
+    "9 physical Earth landings plus King Kai and Beerus; Planet Vampa WIP included but story locked",
+    "Papaya/Tournament, Korin/Lookout, Hercule/Orange Star and Beerus preserved; Vampa built as PLAYABLE_WIP data but normal travel remains story locked",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch geography selection, 9-row mobile location menu, King Kai and Beerus realm travel, Vampa locked, joystick and save-backup control",
+    "Touch geography selection, 9-row mobile location menu, King Kai and Beerus realm travel, Vampa built-but-locked, joystick and save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
