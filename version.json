@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_THIEVES_DEN_V1",
-  "build_id": "1db12fee41a7e77d",
-  "pck_sha256": "1db12fee41a7e77d8c1b2cf61eb3ea7c28c263a4f46fa9a9cf158d21ca53402b",
+  "release": "WORLD_SOUTHWEST_FOREST_V1",
+  "build_id": "479ec203c4055cc5",
+  "pck_sha256": "479ec203c4055cc51579040a925a4cf916157521d0bb442217561b3ca683698c",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T06:29:22.069050+00:00",
+  "updated_utc": "2026-10-01T06:47:12.060072+00:00",
   "notes": [
-    "10 physical Earth landings plus King Kai and Beerus; Thieves Den added",
-    "Vampa remains built/story-locked; Thieves Den added as a playable Earth WIP with later Buu-era events gated",
+    "11 physical Earth landings plus King Kai and Beerus; Southwest Forest added",
+    "Thieves Den and earlier regions preserved; Southwest Forest opens a maze and overlook with Babidi ship/story gated",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch geography selection, 10-row mobile location menu, Thieves Den physical landing, Vampa built-but-locked, realm travel, joystick and save-backup control",
+    "Touch geography selection, 11-row mobile location menu, Southwest Forest physical landing, Vampa built-but-locked, realm travel, joystick and save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
