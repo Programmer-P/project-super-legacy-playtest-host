@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_GOKU_REAR_FLIGHT_WIP_V1",
-  "build_id": "80d397feb7a7dc90",
-  "pck_sha256": "80d397feb7a7dc9057e1b17f92fb7baacca6e1cdd0b600b7f07aa58a7b5b0aa8",
+  "release": "WORLD_GOKU_TURNING_FLIGHT_WIP_V1",
+  "build_id": "74865c4a788a3b5b",
+  "pck_sha256": "74865c4a788a3b5bcfa2d5ec90a5db1e65d0fd5184ede85baf4eab6f1ba936d4",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T18:53:05.504129+00:00",
+  "updated_utc": "2026-10-01T19:10:25.973608+00:00",
   "notes": [
     "13 Earth landings retained; perspective chase camera steering re-centered per held touch gesture; existing routes and landscape controls preserved",
-    "Review-only source-matched Goku REAR flight with 12 cells: two hover, four cruise, four boost, two descend, larger mobile perspective framing; Gohan right-only pilot remains unchanged",
+    "Source-preserved Goku five-angle turn staging: clean rear, shallow left/right banks, hard left/right side-flight, each retains hover/cruise/BOOST/descent columns; Gohan independent right-only pilot unchanged",
     "Original ten-frame title: full bleed and top aligned",
-    "Screen-relative joystick lock remains correct across four headings; Goku banks in direction of screen input; future authentic eight-direction flight remains unbuilt",
+    "Turn bank derives from yaw error and decays as camera follows, preventing permanent left/right pose during long straight flight; future true eight-direction cel animation remains unbuilt",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
