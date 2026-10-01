@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_FLIGHT_STEERING_GOHAN_PREVIEW_V1",
-  "build_id": "8de4f14b564884ab",
-  "pck_sha256": "8de4f14b564884ab21499baaff16b6c3c36a290a7ff2aaeeca2a92a84b03342e",
+  "release": "WORLD_GOKU_REAR_FLIGHT_WIP_V1",
+  "build_id": "80d397feb7a7dc90",
+  "pck_sha256": "80d397feb7a7dc9057e1b17f92fb7baacca6e1cdd0b600b7f07aa58a7b5b0aa8",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T18:31:44.282298+00:00",
+  "updated_utc": "2026-10-01T18:53:05.504129+00:00",
   "notes": [
     "13 Earth landings retained; perspective chase camera steering re-centered per held touch gesture; existing routes and landscape controls preserved",
-    "Goku source-derived WIP hover/cruise/boost poses and Gohan right-facing flight pilot selectable on World Flight only; character production gates and story locks unchanged",
+    "Review-only source-matched Goku REAR flight with 12 cells: two hover, four cruise, four boost, two descend, larger mobile perspective framing; Gohan right-only pilot remains unchanged",
     "Original ten-frame title: full bleed and top aligned",
-    "Fixed screen-relative joystick calibration; continuous held input avoids turn feedback, BOOST accelerates properly, flight demo toggle without enabling Gohan combat",
+    "Screen-relative joystick lock remains correct across four headings; Goku banks in direction of screen input; future authentic eight-direction flight remains unbuilt",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
