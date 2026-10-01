@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_FLIGHT_MOTION_BLEND_WIP_V1",
-  "build_id": "cb7752b91b61e395",
-  "pck_sha256": "cb7752b91b61e395cbf4913097697ef7dc104bdf3fdd22d76cda09ca41557c0b",
+  "release": "WORLD_FLIGHT_HOVER_PRONE_CLEAN_V1",
+  "build_id": "3e58184425cc0f9f",
+  "pck_sha256": "3e58184425cc0f9f02c47eccf4568fe9d24e48c656336b7567ee074e1063cd34",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T19:53:15.780784+00:00",
+  "updated_utc": "2026-10-01T20:37:27.913965+00:00",
   "notes": [
     "13 Earth landings retained; perspective chase camera steering re-centered per held touch gesture; existing routes and landscape controls preserved",
-    "Seven-angle Goku flight WIP retains rear/banked/intermediate/hard turn rows with a brief sprite crossfade to eliminate instantaneous pose popping",
+    "Goku stands static while hovering; moving/BOOST use one complete pixel-art flight cel, angled horizontally ~32 degrees with unchanged skin and no leg cycling",
     "Original ten-frame title: full bleed and top aligned",
-    "Visual-only launch rise and landing scale cue; original coordinates/landing timing and all destinations unchanged; true hand-authored prone flight remains incomplete",
+    "Hover uses approved two-feet-standing Goku; traveling Goku uses the same fixed full-body cel and matching skin palette; Gohan remains independent; original forward/rear 8-direction flight art still pending",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
