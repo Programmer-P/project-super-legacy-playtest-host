@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1790881811|7147306';
+const CACHE_VERSION = '1790883201|14251560';
 /** @type {string} */
 const CACHE_PREFIX = 'Project Super Le-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
