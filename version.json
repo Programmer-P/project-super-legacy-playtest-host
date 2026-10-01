@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_PAPAYA_TOURNAMENT_V1",
-  "build_id": "9714be05d3dc9926",
-  "pck_sha256": "9714be05d3dc9926daba294351023ac28df2d74e7002d3e1b9dbf1eab46cb0aa",
+  "release": "WORLD_BEERUS_PLANET_V1",
+  "build_id": "36001fe8a3ba3d99",
+  "pck_sha256": "36001fe8a3ba3d99011f1492b3706217369189a74af733484988eddb987a4a3f",
   "save_schema": 1,
-  "updated_utc": "2026-09-30T20:40:23.493008+00:00",
+  "updated_utc": "2026-10-01T01:57:37.789083+00:00",
   "notes": [
-    "9 physical Earth landings plus King Kai; Papaya Island added",
-    "Korin/Lookout and Hercule/Orange Star preserved; Papaya Island and World Martial Arts Tournament added as PLAYABLE_WIP",
+    "9 physical Earth landings plus King Kai and Beerus; Beerus realm added",
+    "Papaya/Tournament, Korin/Lookout and Hercule/Orange Star preserved; Beerus Planet added as PLAYABLE_WIP",
     "Original ten-frame title: full bleed and top aligned",
-    "Touch geography selection, 9-row mobile location menu, Papaya-to-tournament physical route, King Kai travel, joystick and save-backup control",
+    "Touch geography selection, 9-row mobile location menu, King Kai and Beerus realm travel, Vampa locked, joystick and save-backup control",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
