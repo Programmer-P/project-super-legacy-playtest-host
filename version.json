@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_GOKU_THREEQUARTER_FLIGHT_WIP_V1",
-  "build_id": "89a210da7b7476de",
-  "pck_sha256": "89a210da7b7476de6d7c900d1348d2214cd339104a3e4042d24660eb92493894",
+  "release": "WORLD_FLIGHT_MOTION_BLEND_WIP_V1",
+  "build_id": "cb7752b91b61e395",
+  "pck_sha256": "cb7752b91b61e395cbf4913097697ef7dc104bdf3fdd22d76cda09ca41557c0b",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T19:33:30.172872+00:00",
+  "updated_utc": "2026-10-01T19:53:15.780784+00:00",
   "notes": [
     "13 Earth landings retained; perspective chase camera steering re-centered per held touch gesture; existing routes and landscape controls preserved",
-    "Seven-row source-derived turning demo adds intermediate left/right three-quarter silhouettes between shallow bank and hard side, retaining Goku/Gohan preview separation",
+    "Seven-angle Goku flight WIP retains rear/banked/intermediate/hard turn rows with a brief sprite crossfade to eliminate instantaneous pose popping",
     "Original ten-frame title: full bleed and top aligned",
-    "Turn bank follows camera yaw error with straight-flight recovery; genuine hand-authored eight-direction flight, front facing and full takeoff transitions remain unfinished",
+    "Visual-only launch rise and landing scale cue; original coordinates/landing timing and all destinations unchanged; true hand-authored prone flight remains incomplete",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
