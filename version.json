@@ -1,14 +1,14 @@
 {
-  "release": "WORLD_FLIGHT_CHARACTER_CLEAR_HUD_V1",
-  "build_id": "a3c93b04907cba2d",
-  "pck_sha256": "a3c93b04907cba2d5aa92237b1311b09cbf1e860d0871ac25bd1dacd4de2882d",
+  "release": "WORLD_FLIGHT_GOKU_REAR_CHASE_WIP_V1",
+  "build_id": "e65c642f9b6a7143",
+  "pck_sha256": "e65c642f9b6a71439157e4768c323550fb22565248be75d53ceb842d499d7c14",
   "save_schema": 1,
-  "updated_utc": "2026-10-01T21:09:50.121516+00:00",
+  "updated_utc": "2026-10-03T09:49:09.735776+00:00",
   "notes": [
     "13 Earth landings retained; perspective chase camera steering re-centered per held touch gesture; existing routes and landscape controls preserved",
-    "Goku standing hover and whole-body horizontal travel remain stable and unchanged; the flight-demo toggle moves out of the chase-character silhouette",
+    "Goku retains approved static standing rear-hover; moving/BOOST now use a single newly composed rear-chase-view prone WIP cel, fixed no leg cycles",
     "Original ten-frame title: full bleed and top aligned",
-    "FLIGHT DEMO button and caption moved from beneath Goku to upper-left of world view, clear of joystick; rear-prone hand-authored art is still LOCAL REVIEW ONLY, not published",
+    "New rear-chase 80px original full-body reference-derived art is WIP; not a complete 8-direction rig; side-facing full-cel previous release remains available as rollback",
     "Same permanent Pages origin; no legacy save deletion"
   ]
 }
