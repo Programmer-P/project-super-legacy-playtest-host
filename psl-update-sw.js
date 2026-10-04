@@ -1,5 +1,5 @@
 
-const BUILD_ID = "403c1660b4ae4655";
+const BUILD_ID = "9186f86894f875f7";
 const CACHE_NAME = "psl-game-build-" + BUILD_ID;
 const CACHE_PREFIX = "psl-game-build-";
 self.addEventListener("install", event => {

@@ -1,14 +1,16 @@
 {
-  "release": "WORLD_FLIGHT_GOKU_3D_WIP_OPTION_V1",
-  "build_id": "403c1660b4ae4655",
-  "pck_sha256": "403c1660b4ae4655d273ba44e0dad4fef2da0bdf1bf8aaace4f541316fe35ab6",
+  "release": "WORLD_FLIGHT_GOKU_3D_MOBILEFIT_V2",
+  "build_id": "9186f86894f875f7",
+  "pck_sha256": "9186f86894f875f70066deaba57cfc4c9487080454e3d8ee87d54612da74c016",
   "save_schema": 1,
-  "updated_utc": "2026-10-04T01:29:06.993815+00:00",
+  "updated_utc": "2026-10-04T02:17:02.433863+00:00",
   "notes": [
-    "Optional 3D Goku WIP art switch added to the existing Earth World Flight scene; original approved 2D Goku is default and still accessible",
-    "3D WIP uses the existing skinned 16-bone V4 rig with upright hover and rear-chase prone travel/BOOST; character appearance remains provisional",
-    "Existing Gohan preview untouched; Earth mainland, Korin Tower, Kami's Lookout and 13 world landings preserved",
-    "No save-data migration, no separate domain; same permanent GitHub Pages URL and PWA update manager",
-    "3D combat V9 still only in isolated local lab; not integrated with world battles"
+    "Optional 3D Goku WIP world-flight model made more legible across phone landscape screens with a closer 3D-only chase camera and uniform 2.05 model scale",
+    "One 16-bone rig remains common to upright hover, horizontal cruise, and BOOST with zero pose-dependent scaling",
+    "Larger 2D/3D switch and lower per-frame UI/bone overhead; standard Godot Compatibility cel shader retained",
+    "Original 2D Goku remains default; original camera restored when switching to 2D or Gohan",
+    "Earth mainland, Korin Tower, Kami Lookout, 13 world landings, touch steering, saves, and existing Gohan remain protected",
+    "11 Godot world suites passed 262 assertions; responsive viewport visual QA at 852x393, 667x375, 932x430 and 780x360",
+    "Physical iPhone Safari and Android Chrome testing still required; 3D appearance remains provisional"
   ]
 }
