@@ -1,16 +1,15 @@
 {
-  "release": "WORLD_FLIGHT_GOKU_3D_DEFAULT_WIP_V3",
-  "build_id": "30f7fa1e28637fe8",
-  "pck_sha256": "30f7fa1e28637fe8638fabede3b74c3373991ed572023f72a7edfef4742d72d6",
+  "release": "WORLD_FLIGHT_GOKU_3D_BATCHED_WIP_V4",
+  "build_id": "c0a800c29aa46f6c",
+  "pck_sha256": "c0a800c29aa46f6c1c096abaff7cabbe31c012dd15e5b6585eb0049198129af9",
   "save_schema": 1,
-  "updated_utc": "2026-10-04T02:31:21.951680+00:00",
+  "updated_utc": "2026-10-05T00:27:01.231150+00:00",
   "notes": [
-    "3D Goku is now shown automatically on entering Earth World Flight when Goku is the selected character; manual activation is no longer required",
-    "One 16-bone Goku mesh shared by hover, horizontal traveling and BOOST at a fixed uniform scale; model art is still explicitly WIP",
-    "Button labeled GOKU: 3D ON / 2D immediately swaps to original 2D artwork; Gohan preview remains separate and unchanged",
-    "3D-only closer mobile chase camera and responsive HUD retained from previous verified mobile fit V2",
-    "13 Earth destinations, mainland, Korin Tower, Kami's Lookout, save data schema and permanent GitHub Pages address preserved",
-    "3D combat and grounded movement remain an isolated V9 lab, not integrated into Earth encounters",
-    "11 full world QA suites passed with 262 checks; physical iPhone/Android real-device test pending"
+    "Reuses current 16-bone WIP Goku art and 3D camera with skinned-body mesh batching; textured Goku back emblem preserved as separate skin",
+    "Original 2D Goku fallback, Gohan preview, and flight controls unchanged",
+    "Godot 11 world-regression suites pass 262 assertions on Surface; 852x393 world visual QA 39 passed",
+    "Prior isolated Edge headless A/B baseline ~52 fps hover/~51.6 travel vs batch ~59.95 in both; browser requestAnimationFrame cadence only, not physical phone FPS",
+    "13 Earth landings, save-schema 1 and permanent GitHub Pages host preserved",
+    "Experimental V5-V7 art studies remain review-only and do not replace the live character visuals"
   ]
 }
