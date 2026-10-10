@@ -1,15 +1,14 @@
-﻿{
-    "release":  "FULL3D_JOURNEY_GOKU_V31_MOBILE_WIP",
-    "build_id":  "0dcbbde392f0654f",
-    "pck_sha256":  "0dcbbde392f0654f60dff010f985fd097a3688ab74c665c5f8e5a8f2e7bd3840",
-    "updated_utc":  "2026-10-10T00:10:24.4747008Z",
+{
+    "release":  "SPRITE_2_5D_GOKU_ROLLBACK_WIP",
+    "build_id":  "e65c642f9b6a7143",
+    "pck_sha256":  "e65c642f9b6a71439157e4768c323550fb22565248be75d53ceb842d499d7c14",
     "save_schema":  1,
-    "mode":  "full3d_journey",
+    "updated_utc":  "2026-10-10T00:41:29.9509912Z",
     "notes":  [
-                  "Full-3D journey: Training Valley, dojo, tournament, world navigation",
-                  "Goku V31 rigged mesh with curled fingers and shared walk, flight and combat poses",
-                  "Landscape mobile touch UI and network-first PWA version detection maintained",
-                  "14 Godot test suites passed 321 checks on Surface; browser startup validated, physical iPhone testing pending",
-                  "Work in progress; previous world flight release recoverable via Git history"
+                  "Restored the proven pre-3D world-flight Goku sprite release by request after V31 3D mobile glitches.",
+                  "2D pixel-art sprite Goku against perspective 2.5D world; includes standing hover and distinct prone flight cel.",
+                  "13 Earth landings, touch joystick, world navigation and landscape play preserved from original release.",
+                  "Genki video animation and sprite style established as the future target; not yet implemented in this rollback.",
+                  "Experimental V31 3D model and journey remain backed up for development, not selected as public start."
               ]
 }
