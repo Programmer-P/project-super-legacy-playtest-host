@@ -1,15 +1,15 @@
-{
-  "release": "WORLD_FLIGHT_GOKU_3D_BATCHED_WIP_V4",
-  "build_id": "c0a800c29aa46f6c",
-  "pck_sha256": "c0a800c29aa46f6c1c096abaff7cabbe31c012dd15e5b6585eb0049198129af9",
-  "save_schema": 1,
-  "updated_utc": "2026-10-05T00:27:01.231150+00:00",
-  "notes": [
-    "Reuses current 16-bone WIP Goku art and 3D camera with skinned-body mesh batching; textured Goku back emblem preserved as separate skin",
-    "Original 2D Goku fallback, Gohan preview, and flight controls unchanged",
-    "Godot 11 world-regression suites pass 262 assertions on Surface; 852x393 world visual QA 39 passed",
-    "Prior isolated Edge headless A/B baseline ~52 fps hover/~51.6 travel vs batch ~59.95 in both; browser requestAnimationFrame cadence only, not physical phone FPS",
-    "13 Earth landings, save-schema 1 and permanent GitHub Pages host preserved",
-    "Experimental V5-V7 art studies remain review-only and do not replace the live character visuals"
-  ]
+﻿{
+    "release":  "FULL3D_JOURNEY_GOKU_V31_MOBILE_WIP",
+    "build_id":  "0dcbbde392f0654f",
+    "pck_sha256":  "0dcbbde392f0654f60dff010f985fd097a3688ab74c665c5f8e5a8f2e7bd3840",
+    "updated_utc":  "2026-10-10T00:10:24.4747008Z",
+    "save_schema":  1,
+    "mode":  "full3d_journey",
+    "notes":  [
+                  "Full-3D journey: Training Valley, dojo, tournament, world navigation",
+                  "Goku V31 rigged mesh with curled fingers and shared walk, flight and combat poses",
+                  "Landscape mobile touch UI and network-first PWA version detection maintained",
+                  "14 Godot test suites passed 321 checks on Surface; browser startup validated, physical iPhone testing pending",
+                  "Work in progress; previous world flight release recoverable via Git history"
+              ]
 }
