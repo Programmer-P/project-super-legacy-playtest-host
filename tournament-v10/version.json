@@ -1,0 +1,16 @@
+{
+    "release":  "WORLD_TOURNAMENT_V10_ORIGINAL_GROUND_RULES_WIP",
+    "pck_sha256":  "a12f5ac088209f02f3a4897050486c375a93b24dfa185a8ede96327a0722821e",
+    "details":  [
+                    "Roof-clear 25th-era-inspired V9 tournament hall and side spectator galleries",
+                    "Original sprite-based Goku/Gohan with 150 audience NPCs",
+                    "Original tournament announcer, ten-count knockdown and recovery mechanics",
+                    "Entrance registration, ring-out, combos, guard, and Gohan AI counterattacks",
+                    "Gameplay and mobile landscape QA only; physical phone and device FPS not verified"
+                ],
+    "status":  "isolated_playable_stage_candidate",
+    "main_world_release":  "e65c642f9b6a7143",
+    "build_id":  "a12f5ac088209f02",
+    "updated_utc":  "2026-10-10T07:17:38.8755034Z",
+    "preceding_tournament_release":  "bce1f254693f2e12"
+}
