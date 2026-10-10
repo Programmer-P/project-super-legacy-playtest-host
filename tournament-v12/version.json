@@ -1,0 +1,16 @@
+﻿{
+    "release":  "WORLD_TOURNAMENT_V12_ORIGINAL_ART_WIP",
+    "build_id":  "d4862476366c4358",
+    "pck_sha256":  "d4862476366c43583e95f4f63d8827776573dc16740030e95b151f2fb1eac8ac",
+    "status":  "isolated_playable_stage_candidate",
+    "main_world_release":  "e65c642f9b6a7143",
+    "previous_tournament_release":  "2f493a015a178bed",
+    "updated_utc":  "2026-10-10T15:40:09.8406471Z",
+    "notes":  [
+                  "Original Genki-inspired temple woodwork, roof tiles and painted limestone ring",
+                  "Inherits V11 original sprites, 150 audience NPCs, announcer, knockdowns, ring-outs, and ten-count",
+                  "32/32 native QA; Godot web export and packed boot passed",
+                  "New path only; main game and existing tournament routes unchanged",
+                  "No physical phone FPS, touchscreen, heat or Safari verification yet"
+              ]
+}
