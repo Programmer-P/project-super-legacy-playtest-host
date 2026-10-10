@@ -1,0 +1,15 @@
+﻿{
+    "release":  "WORLD_TOURNAMENT_CLASSIC_GENKI_V8_WIP",
+    "build_id":  "bce1f254693f2e12",
+    "pck_sha256":  "bce1f254693f2e125b059d5a9eac7274d2ea25ee321754a87c2a7d05577deddb",
+    "updated_utc":  "2026-10-10T06:44:36.8624814Z",
+    "status":  "playable_stage_prototype",
+    "main_world_release":  "e65c642f9b6a7143",
+    "notes":  [
+                  "Independent route: does not overwrite home world game",
+                  "Raised square platform and four-sided crowd with preserved main temple doorway",
+                  "150 seated original NPC sprites, registration, Goku/Gohan combat",
+                  "Browser smoke tested Edge on Surface; physical iPhone/Android not yet verified",
+                  "Original pixel art and authored geometry; no extracted proprietary DBZ game assets"
+              ]
+}
