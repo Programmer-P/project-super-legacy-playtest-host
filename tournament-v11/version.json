@@ -1,0 +1,16 @@
+﻿{
+    "release":  "WORLD_TOURNAMENT_V11_PRESENTATION_GROUND_FIGHT_WIP",
+    "build_id":  "2f493a015a178bed",
+    "pck_sha256":  "2f493a015a178bedad25c9605d7f8a09b6acb6a28b1ed75890a605209bf321c7",
+    "status":  "isolated_playable_stage_candidate",
+    "main_world_release":  "e65c642f9b6a7143",
+    "previous_tournament_build":  "a12f5ac088209f02",
+    "updated_utc":  "2026-10-10T15:25:45.8037694Z",
+    "notes":  [
+                  "Original Goku and Gohan 2D sprites in 3D martial arts arena, 150 crowd spectators",
+                  "Corrected temple-side gallery, original tournament announcer, ring-out and ten-count mechanics",
+                  "New WIP knockdown sprite presentation and compact mobile match HUD",
+                  "Native Surface QA 54/54, exported package boot exit zero, Edge browser visual load confirmed",
+                  "Physical iPhone and Android FPS/thermal/touch testing not yet completed"
+              ]
+}
