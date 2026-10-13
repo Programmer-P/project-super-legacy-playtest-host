@@ -1,0 +1,16 @@
+{
+    "release":  "WORLD_TOURNAMENT_V13_SPRITE_COMBAT_FEEDBACK_WIP",
+    "build_id":  "856f77ebd7329205",
+    "pck_sha256":  "856f77ebd7329205f463f725abfa9e5fa438d4600829db7db15469bdbbc17bbf",
+    "status":  "isolated_playable_stage_candidate",
+    "main_world_release":  "e65c642f9b6a7143",
+    "previous_tournament_release":  "d4862476366c4358",
+    "updated_utc":  "2026-10-13T01:10:09.8972496Z",
+    "notes":  [
+                  "V12 four-sided original arena retained, Goku and Gohan Sprite3D preserved",
+                  "Original-asset dash afterimages, brief strike contact feedback, subtle camera impulse",
+                  "Compact readable status background, original guard, combo, knockdown and referee rules retained",
+                  "35/35 native QA, three rendered phone-sized screens, exported main-pack smoke test",
+                  "Physical iPhone/Android device touch FPS and thermals not yet verified"
+              ]
+}
